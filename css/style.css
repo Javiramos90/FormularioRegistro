@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 2rem 30rem 30rem 30rem;
+    background-color: rgba(128, 128, 128, 0.226);
+    max-width: 400px;
+
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2rem;
+}
+main{
+    background-color: white;
+    box-shadow: 1px 2px rgba(63, 62, 62, 0.493);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+.contenedor{
+    padding-bottom: 10rem;
+}
+.item-formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 3rem;
+    color: rgba(0, 0, 0, 0.459);
+}
+.boton{
+    /* background-color: rgb(31, 109, 16); */
+    color: rgb(11, 110, 16);
+    text-align: center;
+}
