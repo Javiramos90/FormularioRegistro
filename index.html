@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <title>Formulario</title>
 </head>
+
 <body>
+    <!-- Agregar dos inputs: fecha de nacimiento y telefono -->
     <main>
         <h1>Formulario de Registro</h1>
-        <div id="contenedor">
-            <div class="item-formulario">
-                <label for="">Nombre</label>
-                <input type="text">
-            </div>
-            <div class="item-formulario">
-                <label for="">Email</label>
-                <input type="text">
-            </div>
-            <div class="item-formulario">
-                <label for="">Contraseña</label>
-                <input type="text">
-            </div>
-            <div class="item-formulario">
-                <label for="">Confirmar Contraseña</label>
-                <input type="text">
-            </div>
-            <div class="boton">
-                <button onclick="enviarFormulario()">Enviar</button>
-            </div>
-        </div>
+        <form id="registroForm">
+            <div id="contenedor">
+                <div class="item-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input required type="text" id="nombre" name="nombre">
+                    <div class="error" id="nombreError"></div>
+                </div>
+                <div class="item-formulario">
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="item-formulario">
+                    <label for="fechaNacimiento"> Fecha de Nacimiento</label>
+                    <input required type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    <div class="error" id="fechaNacimientoError"></div>
+                </div>    
+                <div class="item-formulario">
+                    <label for="tlf"> Telefono</label>
+                    <input required type="tel" id="tlf" name="tlf">
+                    <div class="error" id="tlfError"></div>
+                </div>
+                <div class="item-formulario">
+                    <label for="password">Contraseña</label>
+                    <input required type="password" id="password" name="password">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <div class="item-formulario">
+                    <label for="confirmPassword">Confirmar Contraseña</label>
+                    <input required type="password" id="confirmPassword" name="confirmPassword">
+                    <div class="error" id="confirmPasswordError"></div>
+                </div>    
+                <div class="item-formulario">
+                    <button type="submit">Enviar</button>
+                </div>
+                    </div>
+                </div>
+        </form>
     </main>
     <script src="js/javascritp.js"></script>
 </body>
+
 </html>

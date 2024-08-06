@@ -6,7 +6,7 @@
 }
 
 body{
-    margin: 2rem 30rem 30rem 30rem;
+    margin: 30px auto;
     background-color: rgba(128, 128, 128, 0.226);
     max-width: 400px;
 
@@ -22,18 +22,16 @@ main{
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
 }
-.contenedor{
-    padding-bottom: 10rem;
-}
 .item-formulario{
     display: flex;
     flex-direction: column;
     margin: 1rem;
     border-radius: 3rem;
     color: rgba(0, 0, 0, 0.459);
+    padding: 0.5rem;
 }
-.boton{
-    /* background-color: rgb(31, 109, 16); */
-    color: rgb(11, 110, 16);
-    text-align: center;
+button{
+    cursor: pointer;
+    background-color: rgb(3, 231, 22);
+    /* width: 280px; */
 }

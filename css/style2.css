@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 30px auto;
+    background-color: rgba(128, 128, 128, 0.226);
+    max-width: 400px;
+
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2rem;
+}
+main{
+    background-color: rgba(34, 255, 207, 0.178);
+    box-shadow: 4px 6px rgba(63, 62, 62, 0.493);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+}
+.item-formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border-radius: 3rem;
+    color: rgb(0, 0, 0);
+    padding: 0.5rem;
+}
+label{
+    color: rgb(61, 61, 194);
+    font-weight: 600; 
+}
+/* version 2 */
+input:focus{
+    outline: none;
+    /* border-color: rgb(40, 41, 41); */
+}
+.success{
+    border-color: #5cb85c;
+}
+.error-input{
+    border-color: red;
+}
+
+
+
+#nombreError, #fechaNacimientoError,#tlfError,
+#emailError, #passwordError, #confirmPasswordError{
+    background-color: rgba(255, 0, 0, 0.603);
+    border-radius: 0.5rem;
+    padding-left: 0.3rem;
+    color:rgb(255, 255, 255)
+}
+button{
+    cursor: pointer;
+    background-color: rgb(3, 231, 22);
+    /* width: 280px; */
+}
